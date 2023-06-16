@@ -52,4 +52,3 @@ const logger = <T>(group: string, message: string, arg: T) => {
 const logStream = curry3(logger)("STREAM");
 logStream("connecting")(true); // [STREAM]:connecting-true
 logStream("connected")({ id: 10 }); // [STREAM]:connected-{"id":10}
-
